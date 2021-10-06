@@ -22,11 +22,11 @@ impl BirthdayQuest {
 
         // Someone will give you the corresponding private key...
         let public_key = ed25519_dalek::PublicKey::from_bytes(
-            &near_sdk::json_types::Base58PublicKey::try_from(
+            &bs58::decode(
                 "ed25519:H5ANpdUoXVwhYBgAgEi1ieMQZKJbwxjPJtHX4vkVcSnF",
             )
-            .unwrap()
-            .0,
+            .into_vec()
+            .unwrap(),
         )
         .unwrap();
 
