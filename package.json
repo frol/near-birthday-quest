@@ -1,0 +1,15 @@
+{
+  "name": "birthday-quest",
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build:contract": "node contract/compile.js",
+    "build:contract:debug": "node contract/compile.js --debug",
+    "dev:deploy:contract": "near dev-deploy",
+    "deploy:contract": "near deploy"
+  },
+  "devDependencies": {
+    "near-cli": "~1.6.0",
+    "shelljs": "~0.8.4"
+  }
+}
