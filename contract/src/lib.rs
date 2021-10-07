@@ -23,7 +23,7 @@ impl BirthdayQuest {
         // Someone will give you the corresponding private key...
         let public_key = ed25519_dalek::PublicKey::from_bytes(
             &bs58::decode(
-                "ed25519:H5ANpdUoXVwhYBgAgEi1ieMQZKJbwxjPJtHX4vkVcSnF",
+                "H5ANpdUoXVwhYBgAgEi1ieMQZKJbwxjPJtHX4vkVcSnF",
             )
             .into_vec()
             .unwrap(),
